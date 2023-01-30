@@ -4,36 +4,124 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="./favicon-32x32.png" />
+    <link rel="stylesheet" href="./calculator-app.css" />
+    <title>Calculator app</title>
   </head>
-  <body class="box-border m-0 p-0">
-    <div class="w-screen h-screen bg-blue-900">
-      <div class="max-w-lg mx-auto">
-        <span>
-          <p>calc</p>
-          <small>THEME</small>
-        </span>
-        <input class="h-24 text-white" type="number" />
-        <div class="h-56">
-          <button class="btns">7</button>
-          <button class="btns">8</button>
-          <button class="btns">9</button>
-          <button class="btns">DEL</button>
-          <button class="btns">4</button>
-          <button class="btns">5</button>
-          <button class="btns">6</button>
-          <button class="btns">+</button>
-          <button class="btns">1</button>
-          <button class="btns">2</button>
-          <button class="btns">3</button>
-          <button class="btns">-</button>
-          <button class="btns">.</button>
-          <button class="btns">0</button>
-          <button class="btns">/</button>
-          <button class="btns">x</button>
-          <button class="btns">RESET</button>
-          <button class="btns">=</button>
+  <body class="bg-blue-900 m-6 font-League Spartan">
+    <div class="m-6 max-w-max mx-auto">
+      <div class="text-white flex justify-between items-center pb-3">
+        <h1 class="text-2xl">calc</h1>
+        <div class="flex justify-between items-end gap-3 text-xs">
+          <div>THEME</div>
+          <div class="flex justify-around text-xs">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-yellow-700 rounded-xl text-3xl text-white p-4 pb-3 text-right"
+      >
+        930,4233
+      </div>
+      <div class="bg-red-900 rounded-xl grid grid-cols-4 gap-4 p-6 mt-4">
+        <div
+          class="bg-pink-500 w-14 h-14 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2"
+        >
+          7
+        </div>
+        <div
+          class="bg-pink-500 w-14 h-14 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2"
+        >
+          8
+        </div>
+        <div
+          class="bg-pink-500 w-14 h-14 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2"
+        >
+          9
+        </div>
+        <div
+          class="bg-pink-500 w-14 h-14 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2"
+        >
+          DEL
+        </div>
+        <div
+          class="bg-pink-500 w-14 h-14 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2"
+        >
+          4
+        </div>
+        <div
+          class="bg-pink-500 w-14 h-14 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2"
+        >
+          5
+        </div>
+        <div
+          class="bg-pink-500 w-14 h-14 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2"
+        >
+          6
+        </div>
+        <div
+          class="bg-pink-500 w-14 h-14 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2"
+        >
+          +
+        </div>
+        <div
+          class="bg-pink-500 w-14 h-14 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2"
+        >
+          1
+        </div>
+        <div
+          class="bg-pink-500 w-14 h-14 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2"
+        >
+          2
+        </div>
+        <div
+          class="bg-pink-500 w-14 h-14 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2"
+        >
+          3
+        </div>
+        <div
+          class="bg-pink-500 w-14 h-14 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2"
+        >
+          -
+        </div>
+        <div
+          class="bg-pink-500 w-14 h-14 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2"
+        >
+          .
+        </div>
+        <div
+          class="bg-pink-500 w-14 h-14 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2"
+        >
+          0
+        </div>
+        <div
+          class="bg-pink-500 w-14 h-14 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2"
+        >
+          /
+        </div>
+        <div
+          class="bg-pink-500 w-14 h-14 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2"
+        >
+          x
+        </div>
+        <div
+          class="bg-pink-500 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2 col-span-2"
+        >
+          RESET
+        </div>
+        <div
+          class="bg-pink-500 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2 col-span-2"
+        >
+          =
         </div>
       </div>
     </div>

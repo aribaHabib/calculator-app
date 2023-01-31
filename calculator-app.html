@@ -11,119 +11,129 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="./favicon-32x32.png" />
-    <link rel="stylesheet" href="./calculator-app.css" />
     <title>Calculator app</title>
   </head>
-  <body class="bg-blue-900 m-6 font-League Spartan">
-    <div class="m-6 max-w-max mx-auto">
-      <div class="text-white flex justify-between items-center pb-3">
-        <h1 class="text-2xl">calc</h1>
-        <div class="flex justify-between items-end gap-3 text-xs">
-          <div>THEME</div>
-          <div class="flex justify-around text-xs">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
+  <body class="bg-[#3a4764] m-6 font-['League_Spartan']">
+    <div class="mt-10 max-w-max mx-auto">
+      <div class="text-white flex justify-between items-end pb-5">
+        <h1 class="text-xl">calc</h1>
+        <div class="flex justify-between items-end gap-5 text-xs">
+          <small>THEME</small>
+          <div>
+            <div class="flex justify-around text-xs gap-2">
+              <div class="onlclick()">1</div>
+              <div class="">2</div>
+              <div class="">3</div>
+            </div>
+            <div class="bg-[#232c43] rounded-full p-1 w-14">
+              <div class="bg-[#d03f2f] hover:bg-[#d96659] rounded-full w-3 h-3">
+                <button area-label="theme-1" id="theme-1"></button>
+                <button area-label="theme-2" id="theme-2"></button>
+                <button area-label="theme-3" id="theme-3"></button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div
-        class="bg-yellow-700 rounded-xl text-3xl text-white p-4 pb-3 text-right"
+        type="number"
+        class="bg-[#182034] rounded-lg text-4xl text-white p-6 text-right pb-5"
       >
-        930,4233
+        399,981
       </div>
-      <div class="bg-red-900 rounded-xl grid grid-cols-4 gap-4 p-6 mt-4">
-        <div
-          class="bg-pink-500 w-14 h-14 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2"
+      <div class="bg-[#232c43] rounded-lg grid grid-cols-4 gap-4 p-6 mt-4">
+        <button
+          class="bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
         >
           7
-        </div>
-        <div
-          class="bg-pink-500 w-14 h-14 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2"
+        </button>
+        <button
+          class="bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
         >
           8
-        </div>
-        <div
-          class="bg-pink-500 w-14 h-14 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2"
+        </button>
+        <button
+          class="bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
         >
           9
-        </div>
-        <div
-          class="bg-pink-500 w-14 h-14 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2"
+        </button>
+        <button
+          class="bg-[#637097] hover:bg-[#939cb8] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-lg text-[#ffffff] cursor-pointer shadow-[0px_3px_0_#404e72]"
         >
           DEL
-        </div>
-        <div
-          class="bg-pink-500 w-14 h-14 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2"
+        </button>
+        <button
+          class="bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
         >
           4
-        </div>
-        <div
-          class="bg-pink-500 w-14 h-14 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2"
+        </button>
+        <button
+          class="bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
         >
           5
-        </div>
-        <div
-          class="bg-pink-500 w-14 h-14 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2"
+        </button>
+        <button
+          class="bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
         >
           6
-        </div>
-        <div
-          class="bg-pink-500 w-14 h-14 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2"
+        </button>
+        <button
+          class="bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
         >
           +
-        </div>
-        <div
-          class="bg-pink-500 w-14 h-14 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2"
+        </button>
+        <button
+          class="bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
         >
           1
-        </div>
-        <div
-          class="bg-pink-500 w-14 h-14 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2"
+        </button>
+        <button
+          class="bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
         >
           2
-        </div>
-        <div
-          class="bg-pink-500 w-14 h-14 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2"
+        </button>
+        <button
+          class="bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
         >
           3
-        </div>
-        <div
-          class="bg-pink-500 w-14 h-14 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2"
+        </button>
+        <button
+          class="bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
         >
           -
-        </div>
-        <div
-          class="bg-pink-500 w-14 h-14 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2"
+        </button>
+        <button
+          class="bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
         >
           .
-        </div>
-        <div
-          class="bg-pink-500 w-14 h-14 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2"
+        </button>
+        <button
+          class="bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
         >
           0
-        </div>
-        <div
-          class="bg-pink-500 w-14 h-14 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2"
+        </button>
+        <button
+          class="bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
         >
           /
-        </div>
-        <div
-          class="bg-pink-500 w-14 h-14 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2"
+        </button>
+        <button
+          class="bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
         >
           x
-        </div>
-        <div
-          class="bg-pink-500 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2 col-span-2"
+        </button>
+        <button
+          class="bg-[#637097] hover:bg-[#939cb8] pt-2 rounded flex justify-center items-center text-lg text-[#ffffff] cursor-pointer col-span-2 shadow-[0px_3px_0_#404e72]"
         >
           RESET
-        </div>
-        <div
-          class="bg-pink-500 rounded flex justify-center items-center text-3xl text-white cursor-pointer pt-2 col-span-2"
+        </button>
+        <button
+          class="bg-[#d03f2f] hover:bg-[#d96659] rounded flex justify-center items-center text-lg text-[#ffffff] pt-2 cursor-pointer col-span-2 shadow-[0px_3px_0_#93261a]"
         >
           =
-        </div>
+        </button>
       </div>
     </div>
+    <script src="./calculator-app.js"></script>
   </body>
 </html>

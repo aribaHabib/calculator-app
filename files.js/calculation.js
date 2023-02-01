@@ -8,21 +8,21 @@ function button(a) {
         reset();
         input = 0;
     }
-    value = screen.innerHTML;
-    screen.innerHTML = value + a;
+    value = screen.textContent;
+    screen.textContent = value + a;
 }
 
 function reset(){
-    screen.innerHTML = '';
+    screen.textContent = '';
 }
 
 function equal(){
-    screen.innerHTML = eval(screen.innerHTML); 
+    screen.textContent = eval(screen.textContent); 
     input = 1;
 }
 
 function del(){
-    let val = screen.innerHTML;
+    let val = screen.textContent;
     let len = val.length;
-    screen.innerHTML= val.slice(0,len-1);
+    screen.textContent= val.slice(0,len-1);
 }

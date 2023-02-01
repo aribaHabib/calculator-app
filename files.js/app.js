@@ -1,4 +1,4 @@
-const body = document.querySelector("body");
+const body = document.querySelector(".root");
 const toggle = document.querySelector("#toggle");
 const circleToggle = document.querySelector("#circle-toggle");
 const circle = document.querySelector(".circle");

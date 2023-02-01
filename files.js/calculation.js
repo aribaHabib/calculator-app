@@ -2,17 +2,10 @@ const btn = document.querySelectorAll(".btn");
 let screen = document.querySelector(".screen");
 
 function button(a) {
-   
-    if(screen.textContent = 0){
-        pre = screen.textContent;
-        console.log(pre); 
-        screen.textContent = pre + a;
-    }
-    else{
-        reset()
-    }
+    pre = screen.textContent;
+    console.log(pre); 
+    screen.textContent = pre + a;
 }
-console.log('hii')
 
 function reset(){
     screen.textContent = '';

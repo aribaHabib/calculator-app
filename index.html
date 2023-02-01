@@ -11,7 +11,6 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="./Images/favicon-32x32.png" />
-    <!-- <link rel="stylesheet" href="./app.css" /> -->
     <title>Calculator app</title>
   </head>
   <body class="bg-[#3a4764] m-6 font-['League_Spartan']">
@@ -38,105 +37,140 @@
         </div>
       </div>
       <div
-        class="bg-[#182034] rounded-lg text-4xl text-white p-6 text-right pb-5 screen"
-      >
-        399,981
-      </div>
+        class="bg-[#182034] rounded-lg text-4xl text-white p-6 text-right pb-5 h-20 screen"
+      ></div>
       <div
         class="keypad bg-[#232c43] rounded-lg grid grid-cols-4 gap-4 p-6 mt-4"
       >
         <button
           class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+          value="7"
+          onclick="button(7)"
         >
           7
         </button>
         <button
           class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+          value="8"
+          onclick="button(8)"
         >
           8
         </button>
         <button
           class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+          value="9"
+          onclick="button(9)"
         >
           9
         </button>
         <button
           class="btn1 bg-[#637097] hover:bg-[#939cb8] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-lg text-[#ffffff] cursor-pointer shadow-[0px_3px_0_#404e72]"
+          value=""
+          onclick="del()"
         >
           DEL
         </button>
         <button
           class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+          value="4"
+          onclick="button(4)"
         >
           4
         </button>
         <button
           class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+          value="5"
+          onclick="button(5)"
         >
           5
         </button>
         <button
           class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+          value="6"
+          onclick="button(6)"
         >
           6
         </button>
         <button
           class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+          value="+"
+          onclick="button('+')"
         >
           +
         </button>
         <button
           class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+          value="1"
+          onclick="button(1)"
         >
           1
         </button>
         <button
           class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+          value="2"
+          onclick="button(2)"
         >
           2
         </button>
         <button
           class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+          value="3"
+          onclick="button(3)"
         >
           3
         </button>
         <button
           class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+          value="-"
+          onclick="button('-')"
         >
           -
         </button>
         <button
           class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+          value="."
+          onclick="button('.')"
         >
           .
         </button>
         <button
           class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+          value="0"
+          onclick="button(0)"
         >
           0
         </button>
         <button
           class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+          value="/"
+          onclick="button('/')"
         >
           /
         </button>
         <button
           class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+          value="x"
+          onclick="button('*')"
         >
           x
         </button>
         <button
           class="btn1 bg-[#637097] hover:bg-[#939cb8] pt-2 rounded flex justify-center items-center text-lg text-[#ffffff] cursor-pointer col-span-2 shadow-[0px_3px_0_#404e72]"
+          value=""
+          onclick="reset()"
         >
           RESET
         </button>
         <button
           class="equal-btn bg-[#d03f2f] hover:bg-[#d96659] rounded flex justify-center items-center text-lg text-[#ffffff] pt-2 cursor-pointer col-span-2 shadow-[0px_3px_0_#93261a]"
+          value=""
+          onclick="equal()"
         >
           =
         </button>
       </div>
     </div>
-    <script src="./app.js"></script>
+    <script src="./files.js/app.js"></script>
+    <script src="./files.js/calculation.js"></script>
   </body>
 </html>

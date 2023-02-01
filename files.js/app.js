@@ -8,8 +8,6 @@ const title = document.querySelector(".title");
 const keypad = document.querySelector(".keypad");
 const equalBtn = document.querySelector(".equal-btn");
 const btns1 = document.querySelectorAll(".btn1");
-// const equalButton = document.querySelector("#equal-button");
-// const resetButton = document.querySelector("#reset-button");
 
 let theme = 1;
  
@@ -70,6 +68,4 @@ toggle.addEventListener('click', () =>{
          el.classList.remove('bg-[#58077d]','shadow-[0px_3px_0_#bc15f4]','hover:bg-[#870bc1]');
       });
      }
-    console.log(theme);
 });
-

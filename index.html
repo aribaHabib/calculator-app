@@ -10,130 +10,133 @@
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" href="./favicon-32x32.png" />
+    <link rel="icon" href="./Images/favicon-32x32.png" />
+    <!-- <link rel="stylesheet" href="./app.css" /> -->
     <title>Calculator app</title>
   </head>
   <body class="bg-[#3a4764] m-6 font-['League_Spartan']">
     <div class="mt-10 max-w-max mx-auto">
-      <div class="text-white flex justify-between items-end pb-5">
+      <div class="text-white flex justify-between items-end pb-5 title">
         <h1 class="text-xl">calc</h1>
         <div class="flex justify-between items-end gap-5 text-xs">
           <small>THEME</small>
-          <div>
+          <div id="toggle">
             <div class="flex justify-around text-xs gap-2">
-              <div class="onlclick()">1</div>
-              <div class="">2</div>
-              <div class="">3</div>
+              <div>1</div>
+              <div>2</div>
+              <div>3</div>
             </div>
-            <div class="bg-[#232c43] rounded-full p-1 w-14">
-              <div class="bg-[#d03f2f] hover:bg-[#d96659] rounded-full w-3 h-3">
-                <button area-label="theme-1" id="theme-1"></button>
-                <button area-label="theme-2" id="theme-2"></button>
-                <button area-label="theme-3" id="theme-3"></button>
-              </div>
+            <div
+              id="circle-toggle"
+              class="bg-[#232c43] rounded-full p-1 w-14 flex"
+            >
+              <div
+                class="circle bg-[#d03f2f] hover:bg-[#d96659] rounded-full w-3 h-3"
+              ></div>
             </div>
           </div>
         </div>
       </div>
       <div
-        type="number"
-        class="bg-[#182034] rounded-lg text-4xl text-white p-6 text-right pb-5"
+        class="bg-[#182034] rounded-lg text-4xl text-white p-6 text-right pb-5 screen"
       >
         399,981
       </div>
-      <div class="bg-[#232c43] rounded-lg grid grid-cols-4 gap-4 p-6 mt-4">
+      <div
+        class="keypad bg-[#232c43] rounded-lg grid grid-cols-4 gap-4 p-6 mt-4"
+      >
         <button
-          class="bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+          class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
         >
           7
         </button>
         <button
-          class="bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+          class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
         >
           8
         </button>
         <button
-          class="bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+          class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
         >
           9
         </button>
         <button
-          class="bg-[#637097] hover:bg-[#939cb8] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-lg text-[#ffffff] cursor-pointer shadow-[0px_3px_0_#404e72]"
+          class="btn1 bg-[#637097] hover:bg-[#939cb8] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-lg text-[#ffffff] cursor-pointer shadow-[0px_3px_0_#404e72]"
         >
           DEL
         </button>
         <button
-          class="bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+          class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
         >
           4
         </button>
         <button
-          class="bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+          class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
         >
           5
         </button>
         <button
-          class="bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+          class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
         >
           6
         </button>
         <button
-          class="bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+          class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
         >
           +
         </button>
         <button
-          class="bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+          class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
         >
           1
         </button>
         <button
-          class="bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+          class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
         >
           2
         </button>
         <button
-          class="bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+          class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
         >
           3
         </button>
         <button
-          class="bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+          class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
         >
           -
         </button>
         <button
-          class="bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+          class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
         >
           .
         </button>
         <button
-          class="bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+          class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
         >
           0
         </button>
         <button
-          class="bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+          class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
         >
           /
         </button>
         <button
-          class="bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+          class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-16 h-10 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
         >
           x
         </button>
         <button
-          class="bg-[#637097] hover:bg-[#939cb8] pt-2 rounded flex justify-center items-center text-lg text-[#ffffff] cursor-pointer col-span-2 shadow-[0px_3px_0_#404e72]"
+          class="btn1 bg-[#637097] hover:bg-[#939cb8] pt-2 rounded flex justify-center items-center text-lg text-[#ffffff] cursor-pointer col-span-2 shadow-[0px_3px_0_#404e72]"
         >
           RESET
         </button>
         <button
-          class="bg-[#d03f2f] hover:bg-[#d96659] rounded flex justify-center items-center text-lg text-[#ffffff] pt-2 cursor-pointer col-span-2 shadow-[0px_3px_0_#93261a]"
+          class="equal-btn bg-[#d03f2f] hover:bg-[#d96659] rounded flex justify-center items-center text-lg text-[#ffffff] pt-2 cursor-pointer col-span-2 shadow-[0px_3px_0_#93261a]"
         >
           =
         </button>
       </div>
     </div>
-    <script src="./calculator-app.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>

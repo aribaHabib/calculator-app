@@ -8,22 +8,21 @@ function button(a) {
         reset();
         input = 0;
     }
-    pre = screen.textContent;
-    console.log(pre); 
-    screen.textContent = pre + a;
+    value = screen.innerHTML;
+    screen.innerHTML = value + a;
 }
 
 function reset(){
-    screen.textContent = '';
+    screen.innerHTML = '';
 }
 
 function equal(){
-    screen.textContent = eval(screen.textContent); 
+    screen.innerHTML = eval(screen.innerHTML); 
     input = 1;
 }
 
 function del(){
-    let val = screen.textContent;
+    let val = screen.innerHTML;
     let len = val.length;
-    screen.textContent= val.slice(0,len-1);
+    screen.innerHTML= val.slice(0,len-1);
 }

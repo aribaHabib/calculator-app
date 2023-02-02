@@ -26,3 +26,23 @@ function del(){
     let len = val.length;
     screen.textContent= val.slice(0,len-1);
 }
+
+document.querySelector("html").addEventListener('keydown', (e)=>{
+    let m= e.key
+    console.log(m)
+    if(m>=0 && m<=9){
+        button(m)
+    }
+    if(m=='-' || m=='+'|| m=='/' || m=='.' || m=='*'){
+        button(m)
+    }
+    if(m=='Enter'){
+        equal();
+    }
+    if(m=='Backspace'){
+        del();
+    }
+    if(m=='Delete'){
+        reset();
+    }
+})

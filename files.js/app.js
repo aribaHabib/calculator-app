@@ -14,7 +14,7 @@ let theme = 1;
 toggle.addEventListener('click', () =>{
     theme++;
     if(theme <= 2){
-       circleToggle.classList.add('justify-center');
+       circleToggle.classList.add('justify-center','bg-[#d1cccc]');
        body.classList.add('bg-[#e6e6e6]');
        keypad.classList.add('bg-[#d1cccc]');
        screen1.classList.add('bg-[#ededed]','text-[#35352c]');
@@ -29,8 +29,8 @@ toggle.addEventListener('click', () =>{
       });
     }
     else if(theme <= 3){
-       circleToggle.classList.remove('justify-center');
-       circleToggle.classList.add('justify-end');
+       circleToggle.classList.remove('justify-center','bg-[#d1cccc]');
+       circleToggle.classList.add('justify-end','bg-[#1d0934]');
        body.classList.remove('bg-[#e6e6e6]');
        body.classList.add('bg-[#160628]');
        keypad.classList.remove('bg-[#d1cccc]');
@@ -54,7 +54,7 @@ toggle.addEventListener('click', () =>{
     }
      else {
        theme = 1;
-       circleToggle.classList.remove('justify-end');
+       circleToggle.classList.remove('justify-end','bg-[#1d0934]');
        body.classList.remove('bg-[#160628]');
        screen1.classList.remove('bg-[#1d0934]','text-[#ffe53d]');
        keypad.classList.remove('bg-[#1d0934]');

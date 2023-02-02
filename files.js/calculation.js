@@ -29,12 +29,11 @@ function del(){
 
 document.querySelector("html").addEventListener('keydown', (e)=>{
     let m= e.key
-    console.log(m)
     if(m>=0 && m<=9){
-        button(m)
+        button(m);
     }
     if(m=='-' || m=='+'|| m=='/' || m=='.' || m=='*'){
-        button(m)
+        button(m);
     }
     if(m=='Enter'){
         equal();

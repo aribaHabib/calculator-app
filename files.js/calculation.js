@@ -1,5 +1,5 @@
 const btn = document.querySelectorAll(".btn");
-let screen = document.querySelector(".screen");
+let screen = document.querySelector("input");
 
 let input = 0;
 
@@ -8,23 +8,23 @@ function button(a) {
         reset();
         input = 0;
     }
-    value = screen.textContent;
-    screen.textContent = value + a;
+    value = screen.value;
+    screen.value = value + a;
 }
 
 function reset(){
-    screen.textContent = '';
+    screen.value = '';
 }
 
 function equal(){
-    screen.textContent = eval(screen.textContent); 
+    screen.value = eval(screen.value); 
     input = 1;
 }
 
 function del(){
-    let val = screen.textContent;
+    let val = screen.value;
     let len = val.length;
-    screen.textContent= val.slice(0,len-1);
+    screen.value= val.slice(0,len-1);
 }
 
 document.querySelector("html").addEventListener('keydown', (e)=>{

@@ -17,13 +17,15 @@
     <div
       class="root bg-[#3A4764] overflow-x-hidden font-['League_Spartan'] h-screen flex"
     >
-      <div class="flex flex-col justify-between items-center gap-4 m-auto p-4">
-        <div class="text-[#ffffff] w-full flex py-2 justify-between title">
-          <h1 class="text-xl flex items-end">calc</h1>
-          <div class="flex justify-between items-end gap-5 text-xs">
+      <div class="max-w-sm w-full m-auto p-5">
+        <div
+          class="text-[#ffffff] flex py-2 justify-between items-end w-full title mb-3"
+        >
+          <h1 class="text-xl">calc</h1>
+          <div class="flex items-end gap-5 text-xs">
             <small>THEME</small>
             <div id="toggle">
-              <div class="flex justify-around text-xs gap-2">
+              <div class="flex justify-around gap-2">
                 <div>1</div>
                 <div>2</div>
                 <div>3</div>
@@ -40,135 +42,138 @@
           </div>
         </div>
         <div
-          class="bg-[#182034] rounded-lg text-4xl text-[#ffffff] p-6 text-right outline-none w-full pb-5 h-20 screen"
-        ></div>
-        <div class="keypad bg-[#232c43] rounded-lg grid grid-cols-4 gap-4 p-6">
-          <button
-            class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-14 h-12 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
-            value="7"
-            onclick="button(7)"
-          >
-            7
-          </button>
-          <button
-            class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-14 h-12 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
-            value="8"
-            onclick="button(8)"
-          >
-            8
-          </button>
-          <button
-            class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-14 h-12 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
-            value="9"
-            onclick="button(9)"
-          >
-            9
-          </button>
-          <button
-            class="btn1 bg-[#637097] hover:bg-[#939cb8] w-14 h-12 pt-2 rounded-lg flex justify-center items-center text-lg text-[#ffffff] cursor-pointer shadow-[0px_3px_0_#404e72]"
+          class="screen bg-[#182034] rounded-lg text-4xl text-[#ffffff] p-6 text-right w-full outline-none pb-5 h-20"
+        >
+        <input type="button" class="bg-transparent max-w-full"/>
+      </div>
+        <div class="keypad w-96 max-w-full bg-[#232C43] mt-3 rounded-lg">
+          <div class="grid grid-cols-4 gap-4 p-6">
+            <button
+              class="btn w-full max-w-2xl h-12 bg-[#eae3dc] hover:bg-[#ffffff] rounded-lg text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597] pt-2"
+              value="7"
+              onclick="button(7)"
+            >
+              7
+            </button>
+            <button
+              class="btn w-full max-w-2xl h-12 bg-[#eae3dc] hover:bg-[#ffffff] rounded-lg text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597] pt-2"
+              value="8"
+              onclick="button(8)"
+            >
+              8
+            </button>
+            <button
+              class="btn w-full max-w-2xl h-12 bg-[#eae3dc] hover:bg-[#ffffff] rounded-lg text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597] pt-2"
+              value="9"
+              onclick="button(9)"
+            >
+              9
+            </button>
+            <button
+            class="btn1 bg-[#637097] hover:bg-[#939cb8] w-full max-w-2xl h-12 rounded-lg text-lg text-[#ffffff] cursor-pointer shadow-[0px_3px_0_#404e72] pt-2"
             value=""
             onclick="del()"
-          >
-            DEL
-          </button>
-          <button
-            class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-14 h-12 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
-            value="4"
-            onclick="button(4)"
-          >
-            4
-          </button>
-          <button
-            class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-14 h-12 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
-            value="5"
-            onclick="button(5)"
-          >
-            5
-          </button>
-          <button
-            class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-14 h-12 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
-            value="6"
-            onclick="button(6)"
-          >
-            6
-          </button>
-          <button
-            class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-14 h-12 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
-            value="+"
-            onclick="button('+')"
-          >
-            +
-          </button>
-          <button
-            class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-14 h-12 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
-            value="1"
-            onclick="button(1)"
-          >
-            1
-          </button>
-          <button
-            class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-14 h-12 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+            >
+              DEL
+            </button>
+            <button
+              class="btn w-full max-w-2xl h-12 bg-[#eae3dc] hover:bg-[#ffffff] rounded-lg text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597] pt-2"
+              value="4"
+              onclick="button(4)"
+            >
+              4
+            </button>
+            <button
+              class="btn w-full max-w-2xl h-12 bg-[#eae3dc] hover:bg-[#ffffff] rounded-lg text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597] pt-2"
+              value="5"
+              onclick="button(5)"
+            >
+              5
+            </button>
+            <button
+              class="btn w-full max-w-2xl h-12 bg-[#eae3dc] hover:bg-[#ffffff] rounded-lg text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597] pt-2"
+              value="6"
+              onclick="button(6)"
+            >
+              6
+            </button>
+            <button
+              class="btn w-full max-w-2xl h-12 bg-[#eae3dc] hover:bg-[#ffffff] rounded-lg text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597] pt-2"
+              value="+"
+              onclick="button('+')"
+            >
+              +
+              <button
+              class="btn w-full max-w-2xl h-12 bg-[#eae3dc] hover:bg-[#ffffff] rounded-lg text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597] pt-2"
+              value="1"
+              onclick="button(1)"
+              >
+                1
+              </button>
+              <button
+            class="btn w-full max-w-2xl h-12 bg-[#eae3dc] hover:bg-[#ffffff] rounded-lg text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597] pt-2"
             value="2"
             onclick="button(2)"
-          >
-            2
-          </button>
-          <button
-            class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-14 h-12 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+            >
+              2
+            </button>
+            <button
+            class="btn w-full max-w-2xl h-12 bg-[#eae3dc] hover:bg-[#ffffff] rounded-lg text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597] pt-2"
             value="3"
             onclick="button(3)"
-          >
-            3
-          </button>
-          <button
-            class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-14 h-12 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+            >
+              3
+            </button>
+            <button
+            class="btn w-full max-w-2xl h-12 bg-[#eae3dc] hover:bg-[#ffffff] rounded-lg text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597] pt-2"
             value="-"
             onclick="button('-')"
-          >
-            -
-          </button>
-          <button
-            class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-14 h-12 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+            >
+              -
+            </button>
+            <button
+            class="btn w-full max-w-2xl h-12 bg-[#eae3dc] hover:bg-[#ffffff] rounded-lg text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597] pt-2"
             value="."
             onclick="button('.')"
-          >
-            .
-          </button>
-          <button
-            class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-15 h-12 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+            >
+              .
+            </button>
+            <button
+            class="btn w-full max-w-2xl h-12 bg-[#eae3dc] hover:bg-[#ffffff] rounded-lg text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597] pt-2"
             value="0"
             onclick="button(0)"
-          >
-            0
-          </button>
-          <button
-            class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-15 h-12 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+            >
+              0
+            </button>
+            <button
+            class="btn w-full max-w-2xl h-12 bg-[#eae3dc] hover:bg-[#ffffff] rounded-lg text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597] pt-2"
             value="/"
             onclick="button('/')"
-          >
-            /
-          </button>
-          <button
-            class="btn bg-[#eae3dc] hover:bg-[#ffffff] w-15 h-12 pt-2 rounded-lg flex justify-center items-center text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597]"
+            >
+              /
+            </button>
+            <button
+            class="btn w-full max-w-2xl h-12 bg-[#eae3dc] hover:bg-[#ffffff] rounded-lg text-3xl text-[#444b5a] cursor-pointer shadow-[0px_3px_0_#b4a597] pt-2"
             value="x"
             onclick="button('*')"
-          >
-            x
-          </button>
-          <button
-            class="btn1 bg-[#637097] hover:bg-[#939cb8] h-10 pt-2 rounded-lg flex justify-center items-center text-lg text-[#ffffff] cursor-pointer col-span-2 shadow-[0px_3px_0_#404e72]"
+            >
+              x
+            </button>
+            <button
+            class="btn1 col-span-2 h-12 bg-[#637097] hover:bg-[#939cb8] pt-2 rounded-lg text-lg text-[#ffffff] cursor-pointer shadow-[0px_3px_0_#404e72]"
             value=""
             onclick="reset()"
-          >
-            RESET
-          </button>
-          <button
-            class="equal-btn bg-[#d03f2f] hover:bg-[#d96659] h-10 rounded-lg flex justify-center items-center text-lg text-[#ffffff] pt-2 cursor-pointer col-span-2 shadow-[0px_3px_0_#93261a]"
+            >
+              RESET
+            </button>
+            <button
+            class="equal-btn bg-[#d03f2f] hover:bg-[#d96659] h-12 col-span-2 rounded-lg text-lg text-[#ffffff] pt-2 cursor-pointer shadow-[0px_3px_0_#93261a]"
             value=""
             onclick="equal()"
-          >
-            =
-          </button>
+            >
+              =
+            </button>
+          </div>
         </div>
       </div>
     </div>
